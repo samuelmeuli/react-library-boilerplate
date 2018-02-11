@@ -1,0 +1,45 @@
+{
+	"name": "react-library-boilerplate",
+	"version": "1.0.2",
+	"description": "Create a React component library with no configuration",
+	"keywords": [
+		"react",
+		"boilerplate",
+		"component",
+		"library",
+		"babel",
+		"rollup",
+		"storybook",
+		"cli"
+	],
+	"main": "index.js",
+	"author": "Samuel Meuli <dev@samuelmeuli.com>",
+	"repository": "github:smeuli/react-library-boilerplate",
+	"license": "MIT",
+	"scripts": {
+		"start": "node ./index.js",
+		"lint": "eslint .",
+		"precommit": "npm run lint",
+		"prepush": "npm run lint"
+	},
+	"dependencies": {
+		"chalk": "^2.3.0",
+		"fs-extra": "^5.0.0",
+		"minimist": "^1.2.0",
+		"ora": "^1.4.0"
+	},
+	"devDependencies": {
+		"eslint": "^4.17.0",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-plugin-import": "^2.8.0",
+		"husky": "^0.14.3"
+	},
+	"bin": {
+		"react-library-boilerplate": "./index.js"
+	},
+	"files": [
+		"boilerplate/",
+		"lib/",
+		"index.js"
+	]
+}
