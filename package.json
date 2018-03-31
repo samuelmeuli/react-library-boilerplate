@@ -1,45 +1,48 @@
 {
-	"name": "react-library-boilerplate",
-	"version": "1.0.3",
-	"description": "Create a React component library with no configuration",
-	"keywords": [
-		"react",
-		"boilerplate",
-		"component",
-		"library",
-		"babel",
-		"rollup",
-		"storybook",
-		"cli"
-	],
-	"main": "index.js",
-	"author": "Samuel Meuli <dev@samuelmeuli.com>",
-	"repository": "github:smeuli/react-library-boilerplate",
-	"license": "MIT",
+	"name": "the-package-name",
+	"version": "0.1.0",
+	"main": "lib/MyComponent.js",
 	"scripts": {
-		"start": "node ./index.js",
+		"start": "concurrently \"npm run rollup\" \"npm run storybook\" -n \"R,S\" -c \"blue,yellow\" --k",
+		"rollup": "rollup -c --watch",
+		"storybook": "start-storybook -p 6006",
+		"build": "rollup -c",
 		"lint": "eslint .",
 		"precommit": "npm run lint",
 		"prepush": "npm run lint"
 	},
 	"dependencies": {
-		"chalk": "^2.3.0",
-		"fs-extra": "^5.0.0",
-		"minimist": "^1.2.0",
-		"ora": "^1.4.0"
+		"prop-types": "^15.6.1"
+	},
+	"peerDependencies": {
+		"react": "^16.0.0"
 	},
 	"devDependencies": {
-		"eslint": "^4.17.0",
-		"eslint-config-airbnb-base": "^12.1.0",
-		"eslint-plugin-import": "^2.8.0",
-		"husky": "^0.14.3"
-	},
-	"bin": {
-		"react-library-boilerplate": "./index.js"
+		"@storybook/addon-actions": "^3.4.0",
+		"@storybook/addon-links": "^3.4.0",
+		"@storybook/addons": "^3.4.0",
+		"@storybook/react": "^3.4.0",
+		"babel-core": "^6.26.0",
+		"babel-eslint": "^7.2.3",
+		"babel-plugin-external-helpers": "^6.22.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-react": "^6.24.1",
+		"concurrently": "^3.5.1",
+		"eslint": "^4.19.1",
+		"eslint-config-react-app": "^2.1.0",
+		"eslint-plugin-flowtype": "^2.46.1",
+		"eslint-plugin-import": "^2.10.0",
+		"eslint-plugin-jsx-a11y": "^5.1.1",
+		"eslint-plugin-react": "^7.7.0",
+		"husky": "^0.14.3",
+		"postcss": "^6.0.21",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0",
+		"rollup": "^0.57.1",
+		"rollup-plugin-babel": "^3.0.3",
+		"rollup-plugin-postcss": "^1.4.1"
 	},
 	"files": [
-		"boilerplate/",
-		"lib/",
-		"index.js"
+		"lib/"
 	]
 }
