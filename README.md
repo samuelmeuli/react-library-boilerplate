@@ -1,7 +1,7 @@
 # react-library-boilerplate
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/smeuli/react-library-boilerplate/blob/master/LICENSE)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/smeuli/react-library-boilerplate/pulls)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/samuelmeuli/react-library-boilerplate/blob/master/LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/samuelmeuli/react-library-boilerplate/pulls)
 
 **Easily start building your React component library using this opinionated boilerplate.**
 
@@ -17,7 +17,7 @@ Included tools:
 To use this boilerplate for creating your own library, execute the following commands (and replace `my-library` with the name of your library):
 
 ```sh
-git clone https://github.com/smeuli/react-library-boilerplate my-library
+git clone https://github.com/samuelmeuli/react-library-boilerplate my-library
 ```
 
 Clean up the files from this repository and install the dependencies:

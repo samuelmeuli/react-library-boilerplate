@@ -3,9 +3,9 @@
 	"version": "0.1.0",
 	"main": "lib/MyComponent.js",
 	"scripts": {
-		"start": "run-p rollup storybook",
-		"rollup": "rollup -c --watch",
-		"storybook": "start-storybook -p 6006",
+		"start": "npm-run-all build --parallel start:*",
+		"start:rollup": "rollup -c --watch",
+		"start:storybook": "start-storybook -p 6006",
 		"build": "rollup -c",
 		"lint": "eslint .",
 		"precommit": "npm run lint",
