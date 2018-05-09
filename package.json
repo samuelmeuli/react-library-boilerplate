@@ -4,7 +4,7 @@
 	"main": "lib/MyComponent.js",
 	"scripts": {
 		"start": "npm-run-all build --parallel start:*",
-		"start:rollup": "rollup -c --watch",
+		"start:rollup": "rollup -c --sourcemap --watch",
 		"start:storybook": "start-storybook -p 6006",
 		"build": "rollup -c",
 		"lint": "eslint .",
