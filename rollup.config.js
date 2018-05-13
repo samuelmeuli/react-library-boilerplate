@@ -1,3 +1,4 @@
+import autoprefixer from 'autoprefixer';
 import babel from 'rollup-plugin-babel';
 import postcss from 'rollup-plugin-postcss';
 
@@ -10,7 +11,9 @@ export default {
 	},
 	external: ['react', 'prop-types'],
 	plugins: [
-		postcss(),
+		postcss({
+			plugins: [autoprefixer]
+		}),
 		babel({
 			exclude: 'node_modules/**',
 			plugins: ['external-helpers']

@@ -5,11 +5,12 @@
 
 **Easily start building your React component library using this opinionated boilerplate.**
 
-Included tools:
+What's included:
 
 * Rollup and Babel for generating a bundle of your library in ES5
 * Storybook for testing the UI of your component interactively
 * ESLint and Husky for code linting
+* Sass support and Autoprefixer for simple styling
 
 
 ## Usage
