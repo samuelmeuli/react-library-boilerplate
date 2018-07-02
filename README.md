@@ -1,8 +1,5 @@
 # react-library-boilerplate
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/samuelmeuli/react-library-boilerplate/blob/master/LICENSE)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/samuelmeuli/react-library-boilerplate/pulls)
-
 **Easily start building your React component library using this opinionated boilerplate.**
 
 What's included:
@@ -11,6 +8,8 @@ What's included:
 * Storybook for testing the UI of your component interactively
 * ESLint and Husky for code linting
 * Sass support and Autoprefixer for simple styling
+
+*My boilerplate for React **applications** can be found [here](https://github.com/samuelmeuli/react-app-boilerplate).*
 
 
 ## Usage
@@ -35,4 +34,4 @@ Execute the start script to bundle your library and start your development serve
 npm start
 ```
 
-Finally, open http://localhost:6006 to see your component in action.
+Finally, open http://localhost:3000 to see your component in action.
