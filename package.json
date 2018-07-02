@@ -3,10 +3,12 @@
 	"version": "0.1.0",
 	"main": "lib/MyComponent.js",
 	"scripts": {
-		"start": "npm-run-all build --parallel start:*",
-		"start:rollup": "rollup -c --sourcemap --watch",
-		"start:storybook": "start-storybook -p 6006",
-		"build": "rollup -c",
+		"start": "npm-run-all build:rollup --parallel start:*",
+		"start:rollup": "rollup --config --sourcemap --watch",
+		"start:storybook": "start-storybook --port 3000",
+		"build": "run-s build:*",
+		"build:rollup": "rollup --config",
+		"build:storybook": "build-storybook --output-dir dist",
 		"lint": "eslint .",
 		"precommit": "npm run lint",
 		"prepush": "npm run lint"
