@@ -1,3 +1,5 @@
+root: true
+
 extends: airbnb
 
 env:
@@ -5,13 +7,18 @@ env:
   node: true
 
 rules:
-  # Default rules
+  # General rules
+  capitalized-comments:
+    - 2
+    - always
+    - ignoreConsecutiveComments: true
   comma-dangle:
     - 2
     - never
   indent:
     - 2
     - tab
+    - SwitchCase: 1
   no-tabs: 0
   object-curly-newline: 0
   object-curly-spacing:
@@ -19,20 +26,16 @@ rules:
     - always
     - objectsInObjects: false
 
-  # Default React rules
+  # React rules
   react/button-has-type: 2
   react/jsx-filename-extension:
     - 2
     - extensions:
-      - .js
+        - .js
   react/jsx-indent:
     - 2
     - tab
   react/jsx-indent-props:
     - 2
     - tab
-
-  # Project-specific rules
-  import/no-extraneous-dependencies:
-    - 2
-    - devDependencies: true  # ignore storybook-react
+  react/jsx-one-expression-per-line: 0

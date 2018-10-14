@@ -1,3 +1,5 @@
+/* eslint import/no-extraneous-dependencies: 0 */
+
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import MyComponent from '../lib/MyComponent';
