@@ -4,6 +4,9 @@
 # Node
 node_modules/
 
-# Build output
+# Storybook
+.cache/
 dist/
+
+# Rollup
 lib/

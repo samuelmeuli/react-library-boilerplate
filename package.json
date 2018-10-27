@@ -1,7 +1,7 @@
 {
 	"name": "the-package-name",
-	"version": "0.1.0",
 	"main": "lib/MyComponent.js",
+	"module": "lib/MyComponent.es.js",
 	"scripts": {
 		"start": "npm-run-all build:rollup --parallel start:*",
 		"start:rollup": "rollup --config --sourcemap --watch",
@@ -9,43 +9,43 @@
 		"build": "run-s build:*",
 		"build:rollup": "rollup --config",
 		"build:storybook": "build-storybook --output-dir dist",
-		"lint": "eslint .",
-		"precommit": "npm run lint",
-		"prepush": "npm run lint"
+		"lint": "eslint ."
 	},
 	"dependencies": {
-		"prop-types": "^15.6.1"
+		"prop-types": "^15.6.2"
 	},
 	"peerDependencies": {
 		"react": "^16.0.0"
 	},
 	"devDependencies": {
-		"@storybook/addon-actions": "^3.4.0",
-		"@storybook/addon-links": "^3.4.0",
-		"@storybook/addons": "^3.4.0",
-		"@storybook/react": "^3.4.0",
-		"autoprefixer": "^8.5.0",
-		"babel-core": "^6.26.0",
-		"babel-eslint": "^7.2.3",
-		"babel-plugin-external-helpers": "^6.22.0",
-		"babel-preset-env": "^1.6.1",
-		"babel-preset-react": "^6.24.1",
-		"eslint": "^4.19.1",
-		"eslint-config-airbnb": "^16.1.0",
-		"eslint-plugin-import": "^2.10.0",
-		"eslint-plugin-jsx-a11y": "^6.0.3",
-		"eslint-plugin-react": "^7.7.0",
-		"husky": "^0.14.3",
-		"node-sass": "^4.9.0",
-		"npm-run-all": "^4.1.2",
-		"postcss": "^6.0.21",
-		"react": "^16.3.0",
-		"react-dom": "^16.3.0",
-		"rollup": "^0.57.1",
-		"rollup-plugin-babel": "^3.0.3",
-		"rollup-plugin-postcss": "^1.4.1"
+		"@babel/core": "^7.1.2",
+		"@babel/preset-env": "^7.1.0",
+		"@babel/preset-react": "^7.0.0",
+		"@storybook/react": "^4.0.0-rc.6",
+		"autoprefixer": "^9.1.3",
+		"babel-loader": "^8.0.4",
+		"eslint": "^5.5.0",
+		"eslint-config-airbnb": "17.1.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-jsx-a11y": "^6.1.1",
+		"eslint-plugin-react": "^7.11.1",
+		"husky": "^1.0.0",
+		"node-sass": "^4.9.3",
+		"npm-run-all": "^4.1.3",
+		"postcss": "^7.0.2",
+		"react": "^16.4.2",
+		"react-dom": "^16.4.2",
+		"rollup": "^0.66.2",
+		"rollup-plugin-babel": "^4.0.2",
+		"rollup-plugin-postcss": "^1.6.2"
 	},
 	"files": [
 		"lib/"
-	]
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn lint",
+			"pre-push": "yarn lint"
+		}
+	}
 }

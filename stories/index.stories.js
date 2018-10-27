@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import MyComponent from '../lib/MyComponent';
+
+import MyComponent from '../lib/MyComponent.es';
 
 
 storiesOf('MyComponent', module)

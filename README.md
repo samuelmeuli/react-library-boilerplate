@@ -25,13 +25,13 @@ Clean up the files from this repository and install the dependencies:
 ```sh
 cd my-library
 rm -rf .git README.md
-npm install
+yarn install
 ```
 
 Execute the start script to bundle your library and start your development server:
 
 ```sh
-npm start
+yarn start
 ```
 
 Finally, open http://localhost:3000 to see your component in action.
