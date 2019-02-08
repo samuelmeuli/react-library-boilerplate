@@ -4,13 +4,12 @@
 
 What's included:
 
-* Rollup and Babel for generating a bundle of your library in ES5
-* Storybook for testing the UI of your component interactively
-* ESLint and Husky for code linting
-* Sass support and Autoprefixer for simple styling
+- Rollup and Babel for generating a bundle of your library in ES5
+- Storybook for testing the UI of your component interactively
+- Prettier, ESLint, and Stylelint for code formatting/linting
+- Sass and Autoprefixer support for simple styling
 
-*My boilerplate for React **applications** can be found [here](https://github.com/samuelmeuli/react-app-boilerplate).*
-
+_My boilerplate for React **applications** can be found [here](https://github.com/samuelmeuli/react-app-boilerplate)._
 
 ## Usage
 
